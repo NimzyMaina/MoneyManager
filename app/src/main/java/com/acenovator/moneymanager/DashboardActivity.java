@@ -1,0 +1,57 @@
+package com.acenovator.moneymanager;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+
+
+public class DashboardActivity extends AppCompatActivity {
+
+    private Toolbar toolbar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_dashboard);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar); // Attaching the layout to the toolbar object
+        setSupportActionBar(toolbar);
+
+        // Dashboard Add Expense button
+        Button btn_minus = (Button) findViewById(R.id.btn_minus);
+
+        // Dashboard Add Income button
+        Button btn_plus = (Button) findViewById(R.id.btn_plus);
+
+        // Dashboard View Income button
+        Button btn_income = (Button) findViewById(R.id.btn_income);
+
+        // Dashboard View Expense button
+        Button btn_expense = (Button) findViewById(R.id.btn_expense);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_dashboard, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}

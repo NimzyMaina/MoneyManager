@@ -1,0 +1,35 @@
+<com.acenovator.moneymanager.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    <!--  News Feed Button -->
+
+    <Button
+        android:id="@+id/btn_expense"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/invoice"
+        android:text="@string/view_expenses" />
+
+    <Button
+        android:id="@+id/btn_income"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/banknotes"
+        android:text="@string/view_income" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/minus"
+        android:text="@string/add_expenses" />
+
+    <!--  Friends Button -->
+    <Button
+        android:id="@+id/btn_plus"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/plus"
+        android:text="@string/add_income" />
+
+
+</com.acenovator.moneymanager.DashboardLayout>
