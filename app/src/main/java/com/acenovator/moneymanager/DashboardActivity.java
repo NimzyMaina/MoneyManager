@@ -1,11 +1,15 @@
 package com.acenovator.moneymanager;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class DashboardActivity extends AppCompatActivity {
@@ -31,6 +35,70 @@ public class DashboardActivity extends AppCompatActivity {
 
         // Dashboard View Expense button
         Button btn_expense = (Button) findViewById(R.id.btn_expense);
+
+        btn_minus.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching News Feed Screen
+//                Intent i = new Intent(getApplicationContext(), NewsFeedActivity.class);
+//                startActivity(i);
+                Context context = getApplicationContext();
+                CharSequence text = "You Clicked Add Expenses";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+
+        btn_plus.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching News Feed Screen
+//                Intent i = new Intent(getApplicationContext(), NewsFeedActivity.class);
+//                startActivity(i);
+                Context context = getApplicationContext();
+                CharSequence text = "You Clicked Add Income";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+
+        btn_income.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching News Feed Screen
+//                Intent i = new Intent(getApplicationContext(), NewsFeedActivity.class);
+//                startActivity(i);
+                Context context = getApplicationContext();
+                CharSequence text = "You Clicked View Income";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+
+        btn_expense.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Launching News Feed Screen
+//                Intent i = new Intent(getApplicationContext(), NewsFeedActivity.class);
+//                startActivity(i);
+                Context context = getApplicationContext();
+                CharSequence text = "You Clicked View Expenses";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
     }
 
     @Override

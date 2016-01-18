@@ -33,5 +33,11 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:background">#dedede</item>
     </style>
+    
+    <style name="HeaderBalanceText">
+        <item name="android:textSize">80dp</item>
+    </style>
+    
+
 
 </resources>

@@ -17,15 +17,17 @@
      android:text="Balance"
      android:layout_marginLeft="10dp"
      android:layout_marginRight="10dp"
-     android:layout_marginTop="10dp"/>
+     android:layout_marginTop="10dp"
+     android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/balance2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="15,000"
-        android:textSize="80dp"
-        android:gravity="center" />
+        android:textSize="75sp"
+        android:gravity="center"
+        android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,30 +44,30 @@
                 android:layout_height="wrap_content"
                 android:text="Expenses"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3,000"
-                android:textSize="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:textSize="25sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Income"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="18,000"
-                android:textSize="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:textSize="25sp"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
