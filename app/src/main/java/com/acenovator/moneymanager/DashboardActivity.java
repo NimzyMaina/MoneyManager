@@ -117,6 +117,16 @@ public class DashboardActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Context context = getApplicationContext();
+            CharSequence text = "You Clicked Settings";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+            return true;
+        }else if (id == R.id.action_categories){
+            Intent i = new Intent(getApplicationContext(), CategoryActivity.class);
+            startActivity(i);
             return true;
         }
 
