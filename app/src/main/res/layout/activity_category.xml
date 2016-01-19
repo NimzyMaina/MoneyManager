@@ -8,15 +8,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar" />
 
-        <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:layout_gravity="center"/>
+            android:text="SAVE" />
+
+        <!-- Select Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Label"
+            android:padding="8dip" />
+
+        <!-- Spinner Dropdown -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            />
     </LinearLayout>
 
 </LinearLayout>

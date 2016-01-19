@@ -9,6 +9,7 @@
     <string name="view_income">View Income</string>
     <string name="home">Home</string>
     <string name="title_activity_category">Categories</string>
+    <string name="spinner_title">Categories</string>
 
     <string name="hello_world">Hello world!</string>
 </resources>
